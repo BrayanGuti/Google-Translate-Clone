@@ -18,28 +18,60 @@ Sigue los pasos a continuación para ejecutar el proyecto en tu máquina local:
 1. Clona el repositorio:
 
    ```bash
-   git clone <url_del_repositorio>
+   git clone https://github.com/BrayanGuti/Google-Translate-Clone
 
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd google-translate-clone
+   cd Google-Translate-Clone
 
-3.  Instala las dependencias:
+2. Instala las dependencias:
 
    ```bash
-  npm install 
-
+   npm install
+   
 4. Ejecuta el proyecto:
    ```bash
-  npm run dev
+   npm run dev
 
 ## 🔑 Configuración de la API
 Este proyecto utiliza la API de DeepL para realizar las traducciones. Para que funcione correctamente, debes tener tu propia API key de DeepL.
 
-1. Obtén tu API Key en el siguiente enlace: DeepL API Key
+1. Obtén tu API Key en el siguiente enlace: [DeepL API Key](https://www.deepl.com/en/your-account/subscription)
 
 2. En el archivo .env (ubicado en la raíz del proyecto), añade tu API Key de la siguiente manera:
+   ```bash
+   VITE_DEEPL_API_KEY="YOUR_API_KEY"
 
-  ```bash
-  VITE_DEEPL_API_KEY="YOUR_API_KEY"
+## 📂 Estructura del Proyecto
+La estructura principal del proyecto es la siguiente:
+   ```bash
+   google-translate-clone/
+│
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── services/
+│   ├── App.css
+│   ├── App.test.tsx
+│   ├── App.tsx
+│   ├── constants.ts
+│   ├── index.css
+│   ├── main.tsx
+│   ├── types.d.ts
+│   ├── vite-env.d.ts
+│
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
